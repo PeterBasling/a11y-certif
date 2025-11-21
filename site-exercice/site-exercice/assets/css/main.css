@@ -3346,3 +3346,24 @@ input, select, textarea {
 .required {
     color: #962E3F;
 }
+
+.formulaire-commentaire input.primary {
+    height: auto;
+    white-space: normal;
+    line-height: 2.5em;
+    padding: 0.875em 1em 0.875em 1em;
+}
+
+@media screen and (max-width: 560px) {
+    #other-visits .tiles {
+        flex-direction: column;
+    }
+    #other-visits .tiles-item {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+th[scope='col'] {
+    word-break: break-word;
+}
