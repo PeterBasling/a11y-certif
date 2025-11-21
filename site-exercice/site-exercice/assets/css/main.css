@@ -3320,3 +3320,20 @@ input, select, textarea {
   white-space: nowrap;
   border: 0;
 }
+
+.comments {
+    list-style: none;
+    font-size: 1rem;
+}
+.comments li {
+    border-bottom: 1px solid grey;
+    margin-top: 1em;
+}
+.comments p {
+    margin-bottom: 1em;
+}
+.comments blockquote {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
