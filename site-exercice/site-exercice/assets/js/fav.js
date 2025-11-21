@@ -13,4 +13,5 @@ btn_fav.addEventListener("click", function() {
   }
   nb_fav.textContent = count;
   isPressed = !isPressed;
+  btn_fav.setAttribute('aria-pressed', isPressed ? 'true' : 'false');
 });
