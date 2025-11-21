@@ -14,12 +14,14 @@
 	<body>
 		<!-- Wrapper -->
 		<div id="wrapper">
-
+			<nav role="navigation" aria-label="Accès rapide">
+				<span><a href="#main" class="skiplink">Aller au contenu</a></span>
+			</nav>
 			<div class="topbar">
 				<p id="nb_fav">Marque-pages : <span id="txt_nb_fav">3</span> destinations <span aria-hidden="true">🌴</span></p>
 			</div>
 			<!-- Header -->
-			<div id="header">
+			<header role="banner" id="header">
 				<div class="inner">
 
 					<!-- Logo -->
@@ -28,27 +30,27 @@
 					</a>
 
 					<!-- Bouton d'accès à la navigation -->
-					<div class="nav">
+					<nav role="navigation" aria-label="Navigation principale" class="nav">
 						<button id="menu_button">
 							<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20M4 12H20M4 18H20" stroke="#008087" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
 							<span class="sr-only">Menu</span>
 						</button>
-					</div>
+					</nav>
 
 				</div>
-			</div>
+			</header>
 
 			<!-- Main -->
-			<div id="main">
+			<main role="main" id="main" tabindex="-1">
 				<div class="inner">
 
 					<!-- Fil d'ariane -->
-					<div class="breadcrumb">
-						<ul>
+					<nav role="navigation" aria-label="Fil d'Ariane" class="breadcrumb">
+						<ol>
 							<li><a href="#">Accueil</a> <span aria-hidden="true">&gt;</span></li>
 							<li><a href="#" aria-current="page">Ardèche</a></li>
-						</ul>
-					</div>
+						</ol>
+					</nav>
 
 					<!-- Intro -->
 					<section>						
@@ -243,10 +245,10 @@
 						</div>
 					</section>
 				</div>
-			</div>
+			</main>
 
 			<!-- Footer -->
-			<div id="footer">
+			<footer role="contentinfo" id="footer">
 				<div class="inner">
 					<ul class="copyright">
 						<li>&copy; Access42</li>
@@ -260,7 +262,7 @@
 					</ul>
 
 				</div>
-			</div>
+			</footer>
 
 		</div>
 
