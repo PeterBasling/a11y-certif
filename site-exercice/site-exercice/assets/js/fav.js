@@ -14,4 +14,7 @@ btn_fav.addEventListener("click", function() {
   nb_fav.textContent = count;
   isPressed = !isPressed;
   btn_fav.setAttribute('aria-pressed', isPressed ? 'true' : 'false');
+  btn_fav.title = isPressed
+        ? "retirer de mes destinations préférées"
+        : "ajouter à mes destinations préférées";
 });
