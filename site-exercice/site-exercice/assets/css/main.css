@@ -2582,6 +2582,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		position: relative;
 		margin: -2.5em 0 0 -2.5em;
+		list-style: none;
 	}
 
 		.tiles .tiles-item {
