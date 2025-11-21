@@ -65,7 +65,7 @@
 							<img class="picto" src="images/star-full.png" alt="3 - note Sélectionné">
 							-
 							<strong>Budget :</strong> 
-							<img class="picto" src="images/sack-dollar-full.png" alt="1 - budget sélectionné"> 
+							<img class="picto" src="images/sack-dollar-full.png" alt="1 - budget sélectionné">
 							<img class="picto" src="images/sack-dollar.png" alt="2"> 
 							<img class="picto" src="images/sack-dollar.png" alt="3">
 						</p>
@@ -208,19 +208,19 @@
 								<!-- Formulaire des commentaires -->
 								<form method="post" action="#" class="formulaire-commentaire" id="formulaire_commentaire">
 									<h3 class="commentaire-titre">Laisser un commentaire</h3>
-
+									<p class="required">* champs obligatoires</p>
 									<div class="fields">
 										<div class="field half">
-											<label>Nom</label>
-											<input type="text" name="name" id="name" required aria-required="true"/>
+											<label for="name">Nom <span class="required">*</span> </label>
+											<input type="text" name="name" id="name" autocomplete="family-name" required aria-required="true"/>
 										</div>
 										<div class="field half">
-											<label>Email</label>
-											<input type="text" name="email" id="email" required aria-required="true"/>
+											<label for="email">Email <span class="required">*</span> </label>
+											<input type="text" name="email" id="email" autocomplete="email" required aria-required="true"/>
 										</div>
 										<div class="field">
-											<div>
-												<div><strong>Notez votre visite</strong></div>
+											<fieldset>
+												<legend><strong>Notez votre visite <span class="required">*</span> </strong></legend>
 												<input id="note1" type="radio" name="note" value="1" required aria-required="true" aria-label="note">
 												<label for="note1">1</label>
 												<input id="note2" type="radio" name="note" value="2" aria-label="note">
@@ -231,14 +231,14 @@
 												<label for="note4">4</label>
 												<input id="note5" type="radio" name="note" value="5" aria-label="note">
 												<label for="note5">5</label>
-											</div>
+											</fieldset>
 										</div>
 										<div class="field">
-											<label>Message</label>
+											<label for="message">Message <span class="required">*</span></label>
 											<textarea name="message" id="message" required aria-required="true"></textarea>
 										</div>
 									</div>
-									<input type="submit" value="Envoyer le message" class="primary" id="soumission_commentaire" aria-label="soumettre le formulaire"/>
+									<input type="submit" value="Envoyer le message" class="primary" id="soumission_commentaire"/>
 								</form>
 								<div id="reponse_formulaire" class="form-response" ></div>
 							</div>

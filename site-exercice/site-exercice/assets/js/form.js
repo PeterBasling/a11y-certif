@@ -5,7 +5,7 @@
     function errors( obj, label, text ){
         var text = document.createTextNode( text );
         var required = document.createElement( 'span' );
-        var span = document.createElement( 'span' );			
+        var span = document.createElement( 'span' );
         var parent = obj.length ? obj[0].parentNode : obj.parentNode;
         required.appendChild( span );
         span.appendChild( text );
@@ -16,10 +16,12 @@
         if (obj.length){
             obj[0].classList.add('required');
             obj[0].setAttribute( 'aria-invalid', true );
+            obj[0].setAttribute('aria-describedby', label);
         } else {
             obj.classList.add('required');
             obj.setAttribute( 'aria-invalid', true );
-        }	
+            obj.setAttribute('aria-describedby', label);
+        }
     }
 
     // vérification de l'adresse email
@@ -35,10 +37,12 @@
             if (element.length != undefined) {
                 node = document.querySelector('.error-message' );
                 element[0].removeAttribute('aria-required');
+                element[0].removeAttribute('aria-describedby');
                 element[0].classList.remove('required');
             } else {
                 node = document.querySelector('.error-message' );
                 element.removeAttribute('aria-required');
+                element.removeAttribute('aria-describedby');
                 element.classList.remove('required');
             }
             if( node ) {
@@ -109,7 +113,7 @@
 				if( node ) {
 					node.parentNode.removeChild( node );}
 				else if( email.value ) {
-					errors( email, 'required-email', 'Saisissez un email valide' );
+					errors( email, 'required-email', 'Saisissez un email valide par exemple nomprenom@domain.com' );
 				}
 				else{
 					errors( email, 'required-email', msg );

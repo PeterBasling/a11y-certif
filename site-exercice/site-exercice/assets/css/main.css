@@ -3342,3 +3342,7 @@ input, select, textarea {
     display: flex;
     list-style: none;
 }
+
+.required {
+    color: #962E3F;
+}
