@@ -145,6 +145,8 @@
 			success.setAttribute( 'class','success' );
 			success.setAttribute( 'id','msg-success' );
 			successmessage.appendChild( success );
+			success.setAttribute( 'tabindex','-1' );
+            success.setAttribute( 'role','alert' );
 			//reset
 			nom.value = '';
 			email.value = '';
