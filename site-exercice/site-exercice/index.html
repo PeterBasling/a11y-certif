@@ -30,12 +30,12 @@
 					</a>
 
 					<!-- Bouton d'accès à la navigation -->
-					<div class="nav">
+					<nav role="navigation" aria-label="Navigation principale" class="nav">
 						<button id="menu_button">
 							<svg aria-hidden="true" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20M4 12H20M4 18H20" stroke="#008087" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
 							<span class="sr-only">Menu</span>
 						</button>
-					</div>
+					</nav>
 					<div role="search" class="recherche">
 						<label for="search">Rechercher sur le site</label>
 						<input type="text" id="search">
@@ -323,7 +323,7 @@
 		</div>
 
 		<!-- Menu Dialog-->
-		<nav role="navigation" aria-label="Navigation principale" id="menu" class="hidden">
+		<div role="dialog" aria-labelledby="dialog1_title" aria-modal="true" id="menu" class="hidden" tabindex="-1">
 			<div class="inner">
 				<button id="close_menu_button"  class="button close-button primary" aria-label="fermer le menu"><span aria-hidden="true">✖️</span></button>
 				<div>
@@ -344,7 +344,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
 
 
 		<!-- Scripts -->

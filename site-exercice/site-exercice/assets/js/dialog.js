@@ -6,8 +6,9 @@ function openDialog() {
   // Rendre la fenêtre de dialogue visible et ajouter les attributs ARIA
   const dialog = document.getElementById("menu");
   dialog.style.display = "block";
-  dialog.setAttribute("aria-hidden", "true");
+  dialog.setAttribute("aria-hidden", "false");
   dialog.classList.remove('hidden');
+  dialog.focus();
 
 
   // Désactiver la navigation au clavier en dehors de la fenêtre de dialogue
@@ -33,6 +34,7 @@ function closeDialog() {
   const mainContent = document.getElementById("wrapper");
   mainContent.removeAttribute("aria-hidden");
   mainContent.removeAttribute("inert");
+  triggerButton.focus();
 
 }
 
